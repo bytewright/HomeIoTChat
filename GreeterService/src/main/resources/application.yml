@@ -1,0 +1,11 @@
+spring:
+  application:
+    name: spring-cloud-eureka-greeter
+server:
+  port: 0
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:50500/eureka}
+  instance:
+    preferIpAddress: true
